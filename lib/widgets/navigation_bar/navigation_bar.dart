@@ -6,10 +6,12 @@ class NavigationBar extends StatelessWidget {
     return Container(
       height: 100,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SizedBox(
             height: 80,
             width: 150,
+            child: Image.asset("assets/images/logo.png"),
           ),
           Row(
             mainAxisSize: MainAxisSize.min,
@@ -21,13 +23,7 @@ class NavigationBar extends StatelessWidget {
                 width: 60,
               ),
               _NavbarItem(
-                title: "Episodes",
-              ),
-              SizedBox(
-                width: 60,
-              ),
-              _NavbarItem(
-                title: "Episodes",
+                title: "About",
               ),
             ],
           )
